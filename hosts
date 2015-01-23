@@ -1,0 +1,4 @@
+[stack]
+8.21.28.143 ansible_ssh_user=ubuntu ansible_python_interpreter=/usr/bin/python2
+8.21.28.144 ansible_ssh_user=ubuntu ansible_python_interpreter=/usr/bin/python2
+8.21.28.145 ansible_ssh_user=ubuntu ansible_python_interpreter=/usr/bin/python2

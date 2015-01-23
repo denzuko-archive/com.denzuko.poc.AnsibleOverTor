@@ -1,0 +1,6 @@
+---
+- hosts: stack
+  sudo: true
+
+  roles:
+    - tor
