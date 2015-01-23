@@ -1,7 +1,11 @@
-= Ansible tor hidden node deployment =
+Ansible tor hidden node deployment
+=================================
+
 (C)2015 Dwight A. Spencer
 
-== Intro ==
+Intro
+=====
+
 As part of a research project into distributed computing, I needed a way to 
 manage the grid no matter if it was deployed to AWS, OpenStack, COTS PC, Pi 
 Cluster, or any other system.
@@ -15,7 +19,9 @@ the grid proved to be invaluable.
 Thus, this project is born to document the process to set up a cluster of hidden
 nodes and manage them via ansible.
 
-== Goals ==
+Goals
+=====
+
   - Create a small computational grid accessable only via ssh with pubkeys
   - Allow only darknet access to nodes
   - Administrate and distribute batch jobs in parallel across the grid
@@ -23,7 +29,9 @@ nodes and manage them via ansible.
   - Must be simple enough that this can run on any Virtualized Hosting, COTS PC,
     and/or a cluster of Raspberry Pi machines.
 
-== Installation ==
+Installation
+============
+
 Installation is very easy from the controlling node and the end
 nodes. Trystack was choisen for the test but can just as easily been done
 thorough EC2. The process of launching instances is documented else where
@@ -39,7 +47,9 @@ Once this step has completed execute:
   git clone https://github.com/denzuko/ansible-tor && cd ansible-tor
   ansible-playbook main.yml -i hosts stack
 
-== Configuration ==
+Configuration
+=============
+
 Be sure to list the IP addresses of each node to install tor on. From there use
 torify/torsocks with ansible-playbook to administrate and interact with nodes via
 their hidden service name.
