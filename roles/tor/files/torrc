@@ -1,4 +1,0 @@
-Log notice syslog
-DataDirectory /var/lib/tor
-HiddenServiceDir /var/lib/tor/hidden_service/
-HiddenServicePort 22 127.0.0.1:22
